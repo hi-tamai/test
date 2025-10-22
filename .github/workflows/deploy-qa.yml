@@ -1,0 +1,12 @@
+name: Deploy to QA
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy_qa:
+    runs-on: ubuntu-latest
+    environment:
+      name: qa
+    steps:
+      - run: echo "hello qa"
