@@ -1,0 +1,13 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy_production:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://google.com
+    steps:
+      - run: echo deploy production
